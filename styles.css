@@ -1,0 +1,85 @@
+*{
+margin:0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+.upper-div {
+    color: white;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  nav {
+    background:url("file:///C:/Users/Itcomplex/Desktop/social-links-profile-main/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    width: 100%;
+    height: 100%;
+  }
+  .section img {
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 50%;
+    height: auto;
+  }
+  .section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .mid-div h1 {
+    color: white;
+    font-size: 50px;
+  }
+  .mid-div p {
+    color: white;
+  }
+  .mid-div button {
+    color: white;
+    border: 2px solid hsl(300, 69%, 71%);
+    width: 100px;
+    background-color: hsl(300, 69%, 71%);
+    border-radius:50px;
+    margin-top: 20px;
+    padding:10px 20px;;
+    cursor: pointer;
+    margin-bottom:10px;
+  }
+  .mid-div {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  @media (max-width: 991px) {
+    .section img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 786px) {
+    .upper-div {
+      color: white;
+      font-size:10px;
+      padding:40px 0px 0px 10px;
+  }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      text-align:center;
+    }
+
+    .section img {
+      padding: 50px 30px 10px 30px;
+      width: 100%;
+      height: auto;
+    }
+
+    .mid-div h1 {
+      color: white;
+      text-align: center;
+      font-size: 40px;
+    }
+  }

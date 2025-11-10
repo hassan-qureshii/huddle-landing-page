@@ -1,85 +1,168 @@
+/* Reset and font */
 *{
-margin:0%;
-padding: 0%;
-box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.upper-div {
-    color: white;
-    font-size: 40px;
-    padding-left: 40px;
-    padding-top: 40px;
-  }
+nav {
+  background: url('bg-desktop.svg');
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  nav {
-    background:url("file:///C:/Users/Itcomplex/Desktop/social-links-profile-main/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
-    background-color: hsl(257, 40%, 49%);
-    width: 100%;
-    height: 100%;
-  }
-  .section img {
-    padding-top: 50px;
-    padding-left: 50px;
-    width: 50%;
-    height: auto;
-  }
-  .section {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-  }
-  .mid-div h1 {
-    color: white;
-    font-size: 50px;
-  }
-  .mid-div p {
-    color: white;
-  }
-  .mid-div button {
-    color: white;
-    border: 2px solid hsl(300, 69%, 71%);
-    width: 100px;
-    background-color: hsl(300, 69%, 71%);
-    border-radius:50px;
-    margin-top: 20px;
-    padding:10px 20px;;
-    cursor: pointer;
-    margin-bottom:10px;
-  }
-  .mid-div {
-    padding-top: 40px;
-    padding-left: 40px;
-  }
+.logo img{
+  padding:20px;
+  width:300px;
+}
 
-  @media (max-width: 991px) {
-    .section img {
-      width: 50%;
-      height: auto;
-    }
-  }
+/* Header layout */
+header{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  height:80vh;
+}
 
-  @media (max-width: 786px) {
-    .upper-div {
-      color: white;
-      font-size:10px;
-      padding:40px 0px 0px 10px;
-  }
+/* Image */
+.img {
+  width:48%;
+}
 
-    .section {
-      display: flex;
-      flex-direction: column;
-      text-align:center;
-    }
+.img img{
+  width:100%;
+  border-radius:10px;
+  animation: float 4s ease-in-out infinite;
+}
 
-    .section img {
-      padding: 50px 30px 10px 30px;
-      width: 100%;
-      height: auto;
-    }
+/* Text section */
+.text{
+  width:48%;
+  padding:20px 40px;
+}
 
-    .mid-div h1 {
-      color: white;
-      text-align: center;
-      font-size: 40px;
-    }
-  }
+.text h1 {
+  width:500px;
+  color: white;
+  font-size:45px;
+  padding-bottom:20px;
+}
+
+.text p {
+  line-height:22px;
+  font-size:14px;
+  color: white;
+}
+
+.text button {
+  color: white;
+  border: 2px solid hsl(300, 69%, 71%);
+  width: 120px;
+  background-color: hsl(300, 69%, 71%);
+  border-radius:50px;
+  margin-top: 20px;
+  padding:10px 20px;
+  cursor: pointer;
+  margin-bottom:10px;
+  transition: all 0.3s ease;
+}
+
+.text button:hover {
+  transform: scale(1.1);
+  background-color: hsl(300, 80%, 60%);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes slideIn {
+  0% { opacity:0; transform: translateX(-50px); }
+  100% { opacity:1; transform: translateX(0); }
+}
+
+.animate-fade {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-slide {
+  animation: slideIn 1.2s ease forwards;
+}
+
+/* Media Queries */
+
+/* 1030px */
+@media(max-width:1030px){
+.text h1 {
+  width:400px;
+  font-size:33px;
+}
+}
+
+/* 870px */
+@media(max-width:870px){
+.text h1 {
+  width:320px;
+  font-size:30px;
+}
+
+.text p{
+  font-size:13px;
+}
+
+.text {
+  padding:20px 5px;
+}
+}
+
+/* 750px */
+@media(max-width:750px){
+nav {
+  height:120vh;
+}
+
+.img {
+  width:80%;
+}
+
+header{
+  height:100vh;
+}
+
+.text{
+  text-align:center;
+  width:80%;
+  padding:20px 40px;
+}
+
+.text h1 {
+  width:100%;
+  font-size:30px;
+}
+}
+
+/* 537px */
+@media(max-width:537px){
+nav {
+  height:100vh;
+}
+
+header{
+  height:80vh;
+}
+
+.text{
+  padding:10px 5px;
+}
+
+.text h1{
+  font-size:25px;
+}
+}

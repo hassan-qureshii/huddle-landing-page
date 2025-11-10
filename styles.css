@@ -78,11 +78,6 @@ header{
 }
 
 /* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
 @keyframes slideIn {
   0% { opacity:0; transform: translateX(-50px); }
   100% { opacity:1; transform: translateX(0); }
